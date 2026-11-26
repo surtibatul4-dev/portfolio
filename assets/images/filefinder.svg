@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgFF" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF7F5"/>
+      <stop offset="50%" stop-color="#F1E8E3"/>
+      <stop offset="100%" stop-color="#EAD5D5"/>
+    </linearGradient>
+    <linearGradient id="roseG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C78D9B"/>
+      <stop offset="100%" stop-color="#C69A91"/>
+    </linearGradient>
+    <filter id="glowFF" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgFF)"/>
+  <circle cx="400" cy="250" r="150" fill="#C78D9B" opacity="0.12" filter="url(#glowFF)"/>
+  <g transform="translate(400, 210)" text-anchor="middle">
+    <!-- Android Icon Ring -->
+    <circle cx="0" cy="-30" r="44" fill="#FFFFFF" stroke="#C69A91" stroke-width="2"/>
+    <text x="0" y="-18" font-size="34" fill="#22c55e" text-anchor="middle">🤖</text>
+    <text x="0" y="44" fill="#29232B" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="30" letter-spacing="-0.5">FileFinder</text>
+    <text x="0" y="74" fill="#71666D" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14">Native Android File Manager &amp; Storage Diagnostic</text>
+    <!-- Placeholder Pill -->
+    <rect x="-160" y="100" width="320" height="34" rx="17" fill="#FFFFFF" stroke="#E5D1D0" stroke-width="1.5"/>
+    <text x="0" y="122" fill="#AD697D" font-family="sans-serif" font-weight="600" font-size="12">📸 App Screenshot Upload Pending</text>
+  </g>
+</svg>

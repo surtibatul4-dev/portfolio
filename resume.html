@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batul Surti | Resume</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Resume of Batul Surti, Software Developer and Android Application Developer.">
+  <meta name="author" content="Batul Surti">
+  <meta name="theme-color" content="#49313F">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      --primary: #C78D9B;
+      --secondary: #49313F;
+      --hover-color: #AD697D;
+      --main-bg: #FAF7F5;
+      --card-bg: #F1E8E3;
+      --border-color: #E5D1D0;
+      --heading-color: #29232B;
+      --body-text: #594D5B;
+      --radius-md: 12px;
+      --radius-full: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      overflow-x: hidden;
+      background-color: var(--main-bg);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: var(--body-text);
+      line-height: 1.6;
+    }
+
+    /* Top Sticky Navigation Bar */
+    .resume-nav {
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(73, 49, 63, 0.95);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(229, 209, 208, 0.2);
+      padding: 12px 20px;
+    }
+
+    .resume-nav-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+
+    .brand-link i {
+      color: var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 9px 18px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn-rose-gold {
+      background: linear-gradient(135deg, var(--primary) 0%, #E5D1D0 100%);
+      color: #FFFFFF;
+      border: 1.5px solid var(--primary);
+      box-shadow: 0 4px 14px rgba(199, 141, 155, 0.35);
+    }
+
+    .btn-rose-gold:hover {
+      background: var(--hover-color);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(173, 105, 125, 0.45);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFFFFF;
+      border: 1.5px solid rgba(229, 209, 208, 0.4);
+    }
+
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    /* Main Resume Sheet Container */
+    .resume-main {
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: clamp(16px, 3.5vw, 36px) clamp(10px, 2.5vw, 20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .resume-sheet-wrap {
+      width: 100%;
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      box-shadow: 0 12px 40px rgba(41, 35, 43, 0.12);
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+    }
+
+    .resume-sheet-wrap picture,
+    .resume-sheet-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* Bottom Action Bar */
+    .resume-bottom-bar {
+      margin-top: 24px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 600px) {
+      .resume-nav {
+        padding: 10px 14px;
+      }
+
+      .brand-link span {
+        font-size: 0.95rem;
+      }
+
+      .btn {
+        padding: 8px 14px;
+        font-size: 0.82rem;
+      }
+
+      .btn-outline span {
+        display: none;
+      }
+
+      .resume-main {
+        padding: 12px 6px;
+      }
+
+      .resume-bottom-bar .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Navigation -->
+  <header class="resume-nav">
+    <div class="resume-nav-inner">
+      <a href="index.html#education" class="brand-link" title="Return to Portfolio">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Batul Surti</span>
+      </a>
+
+      <div class="nav-actions">
+        <a href="index.html#education" class="btn btn-outline" title="Back to Portfolio">
+          <i class="fa-solid fa-house"></i>
+          <span>Portfolio</span>
+        </a>
+        <a href="BatulSurti-Resume.pdf" download="BatulSurti-Resume.pdf" class="btn btn-rose-gold" title="Download Resume PDF">
+          <i class="fa-solid fa-download"></i>
+          <span>Download PDF</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Responsive Resume Viewer -->
+  <main class="resume-main">
+    <div class="resume-sheet-wrap">
+      <picture>
+        <source srcset="assets/images/resume-preview.webp" type="image/webp">
+        <img src="assets/images/resume-preview.jpg" alt="Batul Surti Resume" loading="eager">
+      </picture>
+    </div>
+
+    <div class="resume-bottom-bar">
+      <a href="BatulSurti-Resume.pdf" download="BatulSurti-Resume.pdf" class="btn btn-rose-gold">
+        <i class="fa-solid fa-download"></i>
+        <span>Download PDF (Original Document)</span>
+      </a>
+      <a href="BatulSurti-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="color: var(--heading-color); border-color: var(--border-color); background: #FFFFFF;">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        <span>Open Raw PDF File</span>
+      </a>
+    </div>
+  </main>
+
+</body>
+
+</html>
